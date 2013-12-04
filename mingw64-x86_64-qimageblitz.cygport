@@ -1,0 +1,18 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross qt4-cmake
+
+NAME="mingw64-x86_64-qimageblitz"
+VERSION=0.0.6
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Qt4 image effect library for Win64 toolchain"
+DESCRIPTION="Blitz is an interm image effect library that people can use in
+KDE4 programs in place of the KDE3 KImageEffect class."
+HOMEPAGE="http://www.kde.org/"
+SRC_URI="mirror://kde/stable/qimageblitz/qimageblitz-${VERSION}.tar.bz2"
+SRC_DIR="qimageblitz-${VERSION}"
+PATCH_URI="
+	0.0.6-find-qt4.patch
+	0.0.6-install-pkgconfig.patch
+	0.0.6-noinst-test.patch
+"

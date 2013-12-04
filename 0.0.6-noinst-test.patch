@@ -1,0 +1,8 @@
+--- origsrc/qimageblitz-0.0.6/test/CMakeLists.txt	2010-07-28 13:06:14.000000000 -0500
++++ src/qimageblitz-0.0.6/test/CMakeLists.txt	2013-11-26 00:55:01.608371400 -0600
+@@ -26,5 +26,4 @@ add_executable(blitztest ${blitztest_SRC
+ target_link_libraries(blitztest ${QT_QTCORE_LIBRARY}
+ ${QT_QTGUI_LIBRARY} qimageblitz)
+ 
+-install(TARGETS blitztest DESTINATION ${BIN_INSTALL_DIR})
+ 

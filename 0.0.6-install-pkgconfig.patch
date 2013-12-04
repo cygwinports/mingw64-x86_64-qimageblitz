@@ -1,0 +1,15 @@
+--- origsrc/qimageblitz-0.0.6/blitz/CMakeLists.txt	2010-07-28 13:06:14.000000000 -0500
++++ src/qimageblitz-0.0.6/blitz/CMakeLists.txt	2013-11-26 00:56:55.129864400 -0600
+@@ -66,12 +66,10 @@ install( TARGETS qimageblitz
+ 
+ install( FILES qimageblitz.h qimageblitz_export.h blitzcpu.h DESTINATION include/qimageblitz COMPONENT Devel )
+ 
+-if(NOT WIN32)
+   configure_file("qimageblitz.pc.cmake" "${CMAKE_CURRENT_BINARY_DIR}/qimageblitz.pc"
+   @ONLY) 
+ 
+   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qimageblitz.pc DESTINATION 
+   ${LIB_INSTALL_DIR}/pkgconfig)  
+-endif(NOT WIN32)
+ 
+ 
