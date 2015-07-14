@@ -3,7 +3,7 @@ inherit cross qt4-cmake
 
 NAME="mingw64-x86_64-qimageblitz"
 VERSION=0.0.6
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Qt4 image effect library for Win64 toolchain"
 DESCRIPTION="Blitz is an interm image effect library that people can use in
